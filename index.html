@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo_kp_letters_SvartHvit_favicon.ico" type="image/icon type">
+
+    <!-- CSS -->
+    <!-- W3 CSS Framework-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/kp_styles.css">
+
+    <title>Kontorportalen</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <!-- Mobile menu trigger -->
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" 
+            onclick="toggleFunction()" title="Vis meny">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Menu -->
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </section>
+
+    <!-- Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <div class="w3-center w3-panel w3-padding-32 w3-black w3-wide w3-animate-opacity w3-round">
+                <img src="images/logo_kp_HvitSvart.png" alt="Kontorportalen (logo)" style="width:340px; height:52px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Innledning -->
+    <section class="w3-content w3-container w3-padding-64">
+        <h1 class="w3-center">Vi bringer deg p&aring; nett</h1>
+        <p class="w3-center"><em>Med v&aring;r personlige oppskrift!</em></p>
+        <p>Trenger du en hjemmeside? Eller har du dine sider, men trenger et (nytt) webhotell? 
+            Driver du med kurs og konferanser, eller skal arrangere et event? Hva med salg og e-handel p&aring; nett? 
+            Er du rammet av koronasituasjonen og er p&aring; jakt etter nye muligheter?</p>
+        <p>Uansett om du leter etter noe til deg selv, til ditt lag / forening eller til din bedrift, er svaret det samme.</p>
+        <p class="w3-panel w3-green w3-padding-large w3-round"><em>Kontorportalen kan hjelpe deg med alt dette!</em></p>
+        <p>Vi har etterhvert f&aring;tt lang erfaring med &aring; bygge ulike nettopplevelser. V&aring;rt fokus begynner med deg som kunde - vi ser p&aring; dine behov og tilpasser
+            nettopplevelsen til hva du eller dere vil med deres nettside.</p>
+    </section>
+    
+    <!-- Fokusområder -->
+    <section class="w3-white w3-padding-32">
+        <div class="w3-content w3-container w3-center">
+            <h1 class="w3-center w3-padding-32">V&aring;re fokusomr&aring;der</h1>
+            <!-- What we offer -->
+            <div class="w3-row-padding">
+                <a href="#">
+                    <div class="w3-col m5 w3-center w3-padding-large w3-margin w3-card w3-hover-shadow">
+                        <h2><i class="fas fa-wifi w3-margin-right"></i>Nettsider</h2>
+                        <img src="/images/feature-web.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Bilde: Nettsider">
+                        <p>Hvordan &oslash;nsker du eller dere &aring; v&aelig;re til stede p&aring; internett? Vi bygger alt fra statiske informasjonssider til mer interaktive opplevelser for den bes&oslash;kende.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="w3-col m5 w3-center w3-padding-large w3-margin w3-card w3-hover-shadow">
+                        <h2><i class="fas fa-ethernet w3-margin-right"></i>Webhotell</h2>
+                        <img src="/images/feature-webhotell.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Bilde: Serverrom">
+                        <p>V&aring;re samarbeidspartnere har lang erfaring med webhotell, og velger du oss, s&aring; kan vi trygt si at hos oss f&aring;r du mye for pengene.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-row-padding"></div>
+                <div class="w3-col m5 w3-center w3-padding-large w3-margin w3-card w3-hover-shadow">
+                    <p><strong><i class="fas fa-shopping-cart w3-margin-right"></i>E-handel</strong></p>
+                    <img src="/images/feature-ecommerce.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Bilde: E-handel">
+                    <p>Kanskje vil du ha din fysiske butikk p&aring; nett, eller du vil begynne med netthandel? Vi har l&oslash;sningene som gj&oslash;r at du kan levere nettbutikk.</p>
+                </div>
+
+                <div class="w3-col m5 w3-center w3-padding-large w3-margin w3-card w3-hover-shadow">
+                    <p><strong><i class="fas fa-graduation-cap w3-margin-right"></i>Kurs og konferanser</strong></p>
+                    <img src="/images/feature-conference.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="" >
+                    <p>Kurs, konferanser, events, konserter... Uansett hva du vil arrangere, har vi en l&oslash;sning som passer for deg.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w3-container w3-content w3-padding-32">
+        <h1 class="w3-center w3-padding-32">Prosessen videre</h1>
+        <p class="w3-panel w3-yellow w3-padding w3-round">Kan f&oslash;lgende scenario beskrive hva du tenker n&aring;?</p>
+        <p>Du sitter hjemme, p&aring; kontoret, i klubbhuset - eller kanskje p&aring; farten - og leser dette. Du lurer p&aring; hvordan prosessen skal g&aring; videre. Du har funnet ett eller flere omr&aring;der hvor du &oslash;nsker
+            hjelp. Det er naturlig &aring; f&oslash;le seg litt forvirret over hva man skal gj&oslash;re som neste steg!</p>
+        <p>Derfor er det enkleste &aring; <em>ta kontakt</em> for en uformell prat, der vi kan se se n&aelig;rmere p&aring; dine behov og gi deg 
+            r&aring;d om hvordan vi kan hjelpe deg videre. Dette er selvf&oslash;lgelig <strong>helt uforpliktende</strong> for deg!</p>
+        
+        <p></p>
+    </section>
+
+    <footer class="w3-container w3-dark-grey w3-padding-32">
+        <div class="w3-center w3-content">
+        DETTE ER FOOTER
+        </div>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script>
+        // Toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>
